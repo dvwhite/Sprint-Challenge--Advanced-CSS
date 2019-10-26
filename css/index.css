@@ -175,17 +175,26 @@ p {
   flex-direction: column;
   background-color: #F6F6F6;
   border-bottom: #F1F1F1;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
 }
 .navigation h1 {
   padding: 0.5% 0;
   font-size: 4rem;
 }
 .navigation .nav-items {
-  width: 30%;
+  width: 43rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding-bottom: 1%;
+}
+@media ( max-width: 500px ) {
+  .navigation .nav-items {
+    width: 43rem;
+  }
 }
 .navigation .nav-items .nav-item {
   text-decoration: none;
@@ -204,6 +213,12 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  margin-top: 8.5rem;
+}
+@media ( max-width: 500px ) {
+  .home .intro img {
+    margin-top: 7rem;
+  }
 }
 .home .intro h2 {
   padding: 15px;

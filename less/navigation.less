@@ -4,6 +4,10 @@
     .flex();
     flex-direction: column;
     .nav-bg-border();
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
 
     h1 {
         padding: 0.5% 0;
@@ -11,10 +15,14 @@
     }
 
     .nav-items {
-        width: 30%;
+        width: 43.0rem;
         .flex();
         justify-content: space-evenly;
         padding-bottom: 1%;
+
+        @media @phone {
+            width: 43.0rem;
+        }
 
         .nav-item {
             text-decoration: none;
