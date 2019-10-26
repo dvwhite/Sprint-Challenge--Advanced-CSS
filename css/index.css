@@ -211,6 +211,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media mobile {
+  .home {
+    margin: 0% 1%;
+  }
+}
 .home .intro img {
   width: 100%;
   margin-top: 8.5rem;
@@ -269,11 +274,13 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
-    padding: 0px 10px;
+    padding: 5% 15px;
+    margin-top: 30px;
   }
 }
 .home .walk .walk-text {
   width: 50%;
+  padding-top: 5%;
 }
 @media ( max-width: 500px ) {
   .home .walk .walk-text {
@@ -303,7 +310,7 @@ footer {
 @media ( max-width: 500px ) {
   .home .walk .walk-text .btn {
     width: 100%;
-    padding: 5%;
+    padding: 3%;
   }
 }
 .home .walk .walk-img {
@@ -313,7 +320,7 @@ footer {
 @media ( max-width: 500px ) {
   .home .walk .walk-img {
     width: 100%;
-    padding: 5%;
+    margin-left: 0%;
   }
 }
 .home .walk .walk-img img {
