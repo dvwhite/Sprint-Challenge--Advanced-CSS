@@ -222,7 +222,7 @@ footer {
 }
 @media ( max-width: 500px ) {
   .home .intro img {
-    margin-top: 7rem;
+    margin-top: 6.5rem;
   }
 }
 .home .intro h2 {
