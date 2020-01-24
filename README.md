@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+_David_: An adaptive website uses media queries but uses fixed pixel amounts for sizing instead of responsive units. A fully responsive site uses relative units like rem/em/vh/vw and media queries, which allows it to display on many devices. 
+
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+_David_: A mobile first website is designed with the layout intended for consumption by mobile devices and breakpoints are set using min-width instead of max-width. Example: `@media (min-width: 922px) {}`. 
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+
+_David_: `rem` units reference the root element, which is usually the `html` tag to determine the relative length. The default font size is 16px. 16px * 62.5% = 10px. It is easier to work with multiples of 10 than multiples of 16 when scaling the website's font-size property. If you set `2.0rem;` as a value, it would mean 20px, which is easy to understand. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+_David_: Preprocessing is using a programming language such as JavaScript (`less`) or Ruby (`sass` to extend some of the features of programming languages (variables, functions, composition, inheritance, to name a few...) to css. The preprocessor will compile the extended syntax down to regular css. Compilation can happen manually or using a watcher program that dynamically updates files that are changed in a target directory.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+_David_: My favorite concept with using `less` in particular is that I can make my css code more DRY. What gives me the most trouble is that both `less` variables and the standard css `at-rules` like `@import` and `@media` are prefixed by the same `@` symbol. My only concern is that this could potentially become confusing, but it's a relatively minor issue for me at the moment. Overall, I found using preprocessors intuitive and a big improvement over standard css.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
